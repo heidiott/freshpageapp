@@ -1,0 +1,59 @@
+########################################
+# OS / Editor cruft
+########################################
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+########################################
+# PHP / Composer
+########################################
+vendor/            # composer install recreates this
+composer.lock      # keep if you want reproducible builds; comment out if so
+
+########################################
+# Node / Front-end build artefacts
+########################################
+node_modules/
+package-lock.json  # same note as composer.lock
+pnpm-lock.yaml
+yarn.lock
+public/dist/       # if you compile JS/CSS (Vite, Mix, etc.)
+
+########################################
+# Environment & app secrets
+########################################
+.env
+.env.*             # .env.local, .env.prod, etc.
+
+########################################
+# Runtime / cache / logs
+########################################
+storage/logs/
+storage/cache/
+*.log
+*.cache
+
+########################################
+# Uploaded & compiled assets
+########################################
+storage/uploads/   # local user uploads; S3/Wasabi is source-of-truth
+public/uploads/    # if you copy assets here
+tmp/
+*.tmp
+
+########################################
+# Database
+########################################
+*.sqlite
+*.sqlite3
+database/*.sqlite*
+database/dumps/
+
+########################################
+# MAMP / Mac specific
+########################################
+/Applications/MAMP/tmp/mysql/   # socket files
+/mamp*/tmp/

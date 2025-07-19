@@ -1,0 +1,7 @@
+RewriteEngine On
+# Stripe webhook must bypass the front‑controller
+RewriteRule ^stripe-webhook/?$ stripe-webhook.php [L,PT]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?p=$1 [L,QSA]
