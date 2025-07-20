@@ -56,4 +56,4 @@ database/dumps/
 # MAMP / Mac specific
 ########################################
 /Applications/MAMP/tmp/mysql/   # socket files
-/mamp*/tmp/
+/mamp*/tmp/.env
