@@ -57,3 +57,4 @@ database/dumps/
 ########################################
 /Applications/MAMP/tmp/mysql/   # socket files
 /mamp*/tmp/.env
+vendor/
